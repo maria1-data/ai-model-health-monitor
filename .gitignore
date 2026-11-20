@@ -13,6 +13,9 @@ venv/
 # Local datasets
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/README.md
+!data/raw/telco_customer_churn.csv
+
 data/processed/*
 !data/processed/.gitkeep
 data/reference/*
@@ -21,6 +24,8 @@ data/reference/*
 # Local model artifacts
 models/*
 !models/.gitkeep
+!models/churn_pipeline_v1.joblib
+!models/churn_pipeline_v1.metadata.json
 
 # MLflow tracking database and artifacts
 mlruns/

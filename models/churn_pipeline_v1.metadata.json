@@ -1,0 +1,75 @@
+{
+  "model_name": "gradient_boosting",
+  "model_version": "v1",
+  "trained_at_utc": "2026-11-20T05:36:10+00:00",
+  "sklearn_version": "1.8.0",
+  "random_state": 42,
+  "target_column": "Churn",
+  "positive_class": "Yes",
+  "negative_class": "No",
+  "decision_threshold": 0.5,
+  "input_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "numerical_columns": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_columns": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "best_params": {
+    "learning_rate": 0.1,
+    "max_depth": 2,
+    "n_estimators": 100
+  },
+  "selection_metric": "roc_auc",
+  "cv_mean": {
+    "accuracy": 0.7527553148064385,
+    "precision": 0.5224293303031367,
+    "recall": 0.8053511705685619,
+    "f1": 0.6335945336101376,
+    "roc_auc": 0.8496827207605684
+  },
+  "test_metrics": {
+    "accuracy": 0.7423704755145494,
+    "precision": 0.5094664371772806,
+    "recall": 0.7914438502673797,
+    "f1": 0.6198952879581152,
+    "roc_auc": 0.8458071766255909
+  }
+}

@@ -48,7 +48,7 @@ data:
 training:
   random_state: 42
   cv_folds: 5
-  n_jobs: -1
+  n_jobs: 2
   imbalance_strategy: balanced        # balanced | none
   scoring:
     - accuracy
